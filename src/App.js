@@ -81,3 +81,38 @@ function App() {
 }
 
 export default App;
+
+
+// import { useEffect, useState } from 'react'
+// import { supabase } from './supabaseClient'
+
+// function App() {
+//   const [products, setProducts] = useState([])
+
+//   useEffect(() => {
+//     const fetchProducts = async () => {
+//       let { data, error } = await supabase.from('products').select('*')
+//       if (error) console.error(error)
+//       else setProducts(data)
+//     }
+//     fetchProducts()
+//   }, [])
+
+//   return (
+//     <div>
+//       <h1>Tulivio Store 🌸</h1>
+//       <ul>
+//         {products.map((p) => (
+//           <li key={p.Id}>
+//             <h2>{p.Name}</h2>
+//             <p>{p.Description}</p>
+//             <p>${p.price}</p>
+//             <img src={p.Image_url} alt={p.Name} width="150" />
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   )
+// }
+
+// export default App
