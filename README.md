@@ -1,65 +1,110 @@
-<h2 align="center">E-Commerce Template</h2>
+# E-commerce UI Template
 
-<p align="center">
- Built with React JS, Bootstrap 5
-  <br>
-  <a href="https://e-commerce-template.surge.sh/" target="_blank"><strong>Demo »</strong></a>
-  <br>
-  <br>
+This is an e-commerce UI template built using **React**, **Vite**, **Tailwind CSS**, **Swiper**, and **TypeScript**. The project is designed to provide a scalable and responsive starting point for e-commerce applications, with modern UI components and a clean architecture.
 
-## E-Commerce Template
+## Features
 
-Built with React JS and Bootstrap 5
+- **Responsive Design:** Works seamlessly across different screen sizes.
+- **Swiper Integration:** Beautiful sliders for showcasing products or banners.
+- **Fast Builds:** Powered by Vite for lightning-fast development.
+- **TypeScript Support:** Ensures type safety and cleaner code.
+- **Tailwind CSS:** Utility-first CSS framework for styling without leaving your HTML.
+- **Modular Components:** Easy-to-use, reusable React components.
 
-## Table of contents
+## Technologies Used
 
-- [Quick start](#quick-start)
-- [What's included](#whats-included)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Swiper](https://swiperjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Quick start
+## Installation
 
-Several quick start options are available:
+To run this project locally, follow these steps:
 
-- [Download the latest branch](https://github.com/bhaumikpatel/E-Commerce-Template)
-- Clone the repo: `git clone https://github.com/bhaumikpatel/E-Commerce-Template.git`
-- Install with [npm](https://www.npmjs.com/): `npm install`
-- Runs the app in the development mode `npm start`
-- Builds the app for production to the `build` folder `npm run build`
+1. **Clone the repository:**
 
-## What's included
+   ```bash
+   git clone https://github.com/Resvan/3legant.git
+   ```
 
-- Sign Up
-- Sign In
-- Forgot Password
-- Home Page
-- Product List (List/Grid View)
-- Product Detail
-- Cart
-- Checkout
-- Invoice
-- My Account (Change Password, Setting, Saved Card)
-- Star Zone Page
-- Orders
-- Wishlist's
-- Notification
-- Support
-- Contact Us
-- Blog
-- Blog Detail Page
-- Error Page (404, 500)
+2. **Navigate to the project directory:**
 
-## Thanks
+   ```bash
+   cd 3legant
+   ```
 
-<a href="https://www.getbootstrap.com/" title="Bootstrap" target="_blank">
-  <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap Logo">
-</a>
-<a href="https://reactjs.org/" title="React JS" target="_blank"><img src="https://skillicons.dev/icons?i=react" alt="React Logo">
-</a>
-<a href="https://fontawesome.com/" title="Font Awesome" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Font_Awesome_logomark_blue.svg" alt="Font Awesome Logo" width="48" height="48">
-</a>
-  
-## Copyright and license
+3. **Install dependencies:**
 
-Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   The project should now be running at `http://localhost:3000`.
+
+## Project Structure
+
+```
+├── public          # Static assets
+├── src
+│   ├── assets      # Images, icons, fonts, etc.
+│   ├── components  # Reusable UI components
+│   ├── pages       # Page-level components
+│   ├── styles      # Global and component-specific styles
+│   └── utils       # Utility functions and helpers
+├── App.tsx         # Main application component
+├── main.tsx        # Entry point for the app
+├── index.html      # HTML template
+├── tailwind.config.js  # Tailwind CSS configuration
+├── tsconfig.json   # TypeScript configuration
+└── vite.config.ts  # Vite configuration
+```
+
+## Usage
+
+1. **Development Mode:** To start the development server, run:
+
+   ```bash
+   npm run dev
+   ```
+
+2. **Build for Production:**
+
+   To create a production build, run:
+
+   ```bash
+   npm run build
+   ```
+
+   The output will be generated in the `dist` folder.
+
+3. **Preview Production Build:**
+
+   After building, you can preview the production build locally:
+
+   ```bash
+   npm run preview
+   ```
+
+## Customization
+
+- **Tailwind CSS:** Modify styles in the `tailwind.config.js` or add custom styles to `src/styles`.
+- **Components:** Add or customize React components in the `src/components` directory to fit your requirements.
+- **Swiper Sliders:** Customize the Swiper sliders in `src/components` to adjust the behavior or styling as needed.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+
