@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation, Pagination } from 'swiper/modules';
+import ProtectedRoute from '@/core/components/ProtectedRoute';
 
 const Home: FC = () => {
 
@@ -31,7 +32,7 @@ const Home: FC = () => {
   ];
 
   return (
-    <>
+    <ProtectedRoute>
     <section className='px-8 lg:px-14'>
       <Swiper
         slidesPerView={1}
@@ -295,7 +296,7 @@ const Home: FC = () => {
           }
         </div>
       </section>
-    </>
+    </ProtectedRoute>
   )
 }
 
